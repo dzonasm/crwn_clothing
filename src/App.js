@@ -55,7 +55,7 @@ class App extends React.Component {
 
 }
 
-const maoStateToProps = ({ user }) => ({
+const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser
 })
 
@@ -64,5 +64,5 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(
-  maoStateToProps,
+  mapStateToProps,
   mapDispatchToProps)(App);
