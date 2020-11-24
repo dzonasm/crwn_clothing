@@ -34,7 +34,6 @@ const ChekoutPage = ({ cartItems, total }) => (
                     cartItem={cartItem}
                 />)
         }
-
         <div className='total'>
             <span>TOTAL:$ {total}</span>
         </div>
