@@ -11,6 +11,7 @@ import Header from './components/header/header.component'
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { selectCurrentUser } from './redux/user/user.selector'
 import { checkUserSession } from './redux/user/user.actions'
+import ContactUs from './pages/contact-us/ContactUs.component';
 
 const App = ({ currentUser, checkUserSession }) => {
 
@@ -28,6 +29,7 @@ const App = ({ currentUser, checkUserSession }) => {
         <Route path='/shop' component={ShopPage} />
         <Route exact path='/checkout' component={CheckoutPage} />
         <Route exact path='/signin' render={() => currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />)} />
+        <Route exact path='/contact' component={ContactUs} />
         <HomePage />
       </Switch>
     </div>
