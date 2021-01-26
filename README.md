@@ -4,7 +4,7 @@ A fictional e-commerce website, with user authentication, user payments and shop
 
 # Running the code
 
-Clone the repository in your computer, install the dependencies with "npm i", cd into the "client folder" and run "npm start"
+Clone the repository in your computer, install the dependencies with "npm i", cd into the "client" folder and run "npm start"
 
 # Hosted website
 
